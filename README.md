@@ -12,12 +12,13 @@ Pentru a vă înscrie folosiți acest link: [link]().
 
 
 ## Cuprins exerciții
-- [1. Controlul congestiei (25%)](#congestion)
-- 2. Exercițiu la alegere (25%)
+
+- [Controlul congestiei (25%)](#congestion)
+- [Exercițiu la alegere (25%)](#rutare)
   - [Rutare](#rutare)
   - [HTTP service](#http)
-- [3. ARP Spoofing (25%)](#arp_spoof)
-- [4. TCP Hijacking (25%)](#tcp_hij)
+- [ARP Spoofing (25%)](#arp_spoof)
+- [TCP Hijacking (25%)](#tcp_hij)
 
 
 

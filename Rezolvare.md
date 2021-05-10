@@ -25,7 +25,7 @@
 - B
 - C
 
-## 2. Exercițiu la alegere
+## 2. Exercițiu la alegere (25%)
 
 ### Rutare
 
