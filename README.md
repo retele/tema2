@@ -7,7 +7,7 @@ Punctajul temei este 60% din nota finală.
 
 Veți fi evaluați individual în funcție de prezentarea temei și commit-uri în repository prin `git blame` și `git-quick-stats -a`. Doar utilizatorii care apar cu modificări în repository vor fi punctați (în funcție de modificările pe care le fac).
 
-Pentru a vă înscrie folosiți acest link: [link]().
+Pentru a vă înscrie folosiți acest URL: [https://classroom.github.com/g/JW06XU7c](https://classroom.github.com/g/JW06XU7c).
 
 
 
