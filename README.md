@@ -3,11 +3,11 @@
 ## Informații temă
 **Termen limită**: **14 iunie 2021** 
 
-Punctajul temei este 60% din nota finală.
+Punctajul temei este 60% din nota finală de laborator.
 
 Veți fi evaluați individual în funcție de prezentarea temei și commit-uri în repository prin `git blame` și `git-quick-stats -a`. Doar utilizatorii care apar cu modificări în repository vor fi punctați (în funcție de modificările pe care le fac).
 
-Pentru a vă înscrie folosiți acest URL: [https://classroom.github.com/g/JW06XU7c](https://classroom.github.com/g/JW06XU7c).
+Pentru a vă înscrie folosiți acest URL: [https://classroom.github.com/g/JW06XU7c](https://classroom.github.com/g/JW06XU7c)
 
 
 
@@ -112,21 +112,24 @@ Scrieți un end-point HTTP care are ca scop partiționarea unui range de IP-uri 
 Pentru acest exercițiu va trebui să folosiți AWS. Dacă rămâneți fără credits sau dacă nu ați primit mail cu invite AWSEducate, vă rog să îmi scrieți pe mail. Predarea soluției se va face ca aplicație server pe AWS și sursele în repository de githubȘ
 
 1) urmăriți [aici un tutorial](https://m.youtube.com/watch?v=MpBKali87YI) silent despre cum să vă configurati un server pe AWS si sa deschideti porturi
-2) adăugați sursele modificate sau folosite în directorul `src`
+2) adăugați sursele modificate sau folosite în directorul `http_api`
 2) modificați template-ul Rezolvare.md și completați raportul cu cerințele de acolo.
 
 
-Puteți folosi template-ul [simple_flask.py](https://github.com/senisioi/computer-networks/blob/2021/capitolul2/src/simple_flask.py) pentru a crea un serviciu HTTP cu o metoda [POST](https://www.w3schools.com/tags/ref_httpmethods.asp). Sau folosiți librăria [fastapi](https://github.com/tiangolo/fastapi) care are integrat și swagger.
+Puteți folosi template-ul [simple_flask.py](https://github.com/retele/tema2/blob/master/http_api/simple_flask.py) pentru a crea un serviciu HTTP cu o metoda [POST](https://www.w3schools.com/tags/ref_httpmethods.asp). Sau folosiți librăria [fastapi](https://github.com/tiangolo/fastapi) care are integrat și swagger.
 
 Input:
 ```json
 {
-	"subnet": "10.189.24.0/24",  // range-ul de IP-uri initial
-	"dim": [10, 10, 100],        // o lista cu numarul de noduri 
-}                                // care trebuie acoperit de fiecare subretea
+	"subnet": "10.189.24.0/24",
+	"dim": [10, 10, 100],        
+}
+
+// subnet - range-ul de IP-uri initial  
+// dim - o lista cu numarul de noduri care trebuie acoperit de fiecare subretea
 ```
 
-Iar aplicația returnează o împărțire în subrețele:
+Iar aplicația returnează o împărțire în subrețele în funcție de numărul de elemente de din listă:
 ```json
 {
 	"LAN1": "10.189.24.128/28",
@@ -134,7 +137,7 @@ Iar aplicația returnează o împărțire în subrețele:
 	"LAN3": "10.189.24.0/25"
 }
 ```
-În cazul în care împărțirea se poate face, returnați o eroare.
+În cazul în care împărțirea nu se poate face, returnați o eroare.
 
 
 #### Indicații de rezolvare
