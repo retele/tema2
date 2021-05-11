@@ -1,13 +1,14 @@
 # Tema 2
 
-- [1. Controlul congestiei (25%)](#congestion)
-- 2. Exercițiu la alegere (25%)
+- [Controlul congestiei (25%)](#congestion)
+- Exercițiu la alegere (25%)
   - [Rutare](#rutare)
   - [HTTP API](#http)
-- [3. ARP Spoofing (25%)](#arp_spoof)
-- [4. TCP Hijacking (25%)](#tcp_hij)
+- [ARP Spoofing (25%)](#arp_spoof)
+- [TCP Hijacking (25%)](#tcp_hij)
 
 
+<a name="congestion"></a> 
 ## 1. Controlul congestiei (25%)
 
 ### 1.1 Diagrama pentru RENO este:
@@ -25,8 +26,11 @@
 - B
 - C
 
+
+<a name="rutare"></a> 
 ## 2. Exercițiu la alegere (25%)
 
+<a name="rutare"></a> 
 ### Rutare
 
 - Forwarding vs. Routing 
@@ -35,6 +39,7 @@
 - Open Shortest Path First 
 - Border Gateway Protocol Routing 
 
+<a name="http"></a> 
 ### HTTP API
 
 Aplicația poate fi accesata la adresa:
@@ -42,7 +47,7 @@ Aplicația poate fi accesata la adresa:
 http://ec2-34-34-34-34.compute-1.amazonaws.com/subnetting
 ```
 
-
+<a name="arp_spoof"></a> 
 ## 3. ARP Spoofing (25%)
 
 Scrieție mesajele primite de server, client și printați acțiunile pe care le face middle.
@@ -56,7 +61,7 @@ logs de tcpdump
 ```
 Puteți pune și capturi de ecran din wireshark prin orice alte metode de prezentare.
 
-
+<a name="tcp_hij"></a> 
 ## 4. TCP Hijacking (25%)
 Scrieție mesajele primite de server, client și printați acțiunile pe care le face middle.
 ```
