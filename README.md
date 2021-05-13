@@ -105,7 +105,7 @@ Citiți și urmăriți cursurile despre Forwarding si Routing și scrieți o scu
 
 
 <a name="http"></a> 
-### 2.2 HTTP service (5%)
+### 2.2 HTTP service
 
 Scrieți un end-point HTTP care are ca scop partiționarea unui range de IP-uri în subnets în funcție de numărul de noduri și numărul de subrețele cerute. În [prima parte a acestui tutorial](https://witestlab.poly.edu/blog/designing-subnets/) puteți vedea un exemplu de împărțire manuală.
 
@@ -141,6 +141,31 @@ Iar aplicația returnează o împărțire în subrețele în funcție de număru
 
 
 #### Indicații de rezolvare
+
+##### Cum transformăm adrese în octeți și invers
+Adresele IP pot fi transformate în șiruri de octeți (numere) folosind inet_aton sau inet_ntoa:
+```python
+import socket
+
+IP = '198.10.0.3'
+octeti = socket.inet_aton(IP)
+print(octeti)
+#b'\xc6\n\x00\x03'
+
+for octet in octeti:
+    print(octet)
+'''
+198
+10
+0
+3
+'''
+
+ip_string = socket.inet_ntoa(octeti)
+print(ip_string)
+#'198.10.0.3'
+
+```
 
 ##### Cum testăm aplicația
 Testați aplicația folosind requests, header-ul trebuie să fie: `{'Content-Type': 'application/json'}` iar datele trebuie transformate cu `json.dumps()`.
