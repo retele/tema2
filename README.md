@@ -230,8 +230,8 @@ După ce ați reușit atacul cu ARP spoofing și interceptați toate mesajele, m
 ### Indicații de rezolvare
 
 1. Încercați întâi să captați și să modificați mesajele de pe containerul router pentru a testa captura pacheteleor și TCP hijacking apoi puteți combina exercițiul 1 cu metoda de hijacking.
-1. Puteți urmări exemplul din capitolul 3 despre [Netfilter Queue](https://github.com/senisioi/computer-networks/blob/2020/capitolul3/README.md#scapy_nfqueue) pentru a pune mesajele care circulă pe rețeaua voastră într-o coadă ca să le procesați cu scapy.
-1. Urmăriți exemplul [DNS Spoofing](https://github.com/senisioi/computer-networks/blob/2020/capitolul3/README.md#scapy_dns_spoofing) pentru a vedea cum puteți altera mesajele care urmează a fi redirecționate într-o coadă și pentru a le modifica payload-ul înainte de a le trimite (adică să modificați payload-ul înainte de a apela `packet.accept()`).
+1. Puteți urmări exemplul din capitolul 6 despre [Netfilter Queue](https://github.com/senisioi/computer-networks/tree/2021/capitolul6#scapy_nfqueue) pentru a pune mesajele care circulă pe rețeaua voastră într-o coadă ca să le procesați cu scapy.
+1. Urmăriți exemplul [DNS Spoofing](https://github.com/senisioi/computer-networks/tree/2021/capitolul6#scapy_dns_spoofing) pentru a vedea cum puteți altera mesajele care urmează a fi redirecționate într-o coadă și pentru a le modifica payload-ul înainte de a le trimite (adică să modificați payload-ul înainte de a apela `packet.accept()`).
 1. Verificați dacă pachetele trimise/primite au flag-ul PUSH setat. Are sens să alterați SYN sau FIN?
 1. Țineți cont de lungimea mesajului pe care îl introduceți pentru ajusta Sequence Number (trebuie ajustat și Acknowledgement Number?).
 1. Scrieți pe teams orice întrebări aveți, indiferent de cât de simple sau complicate vi se par.
