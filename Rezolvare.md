@@ -13,7 +13,8 @@
 
 ### 1.1 Diagrama pentru RENO este:
 
-![alt text](https://www.networkers-online.com/blog/wp-content/uploads/2016/10/STEVENS2-1024x552.jpg)
+![alt text](![plot1](https://user-images.githubusercontent.com/61222782/121704885-d4fe8d00-cadc-11eb-87e6-d70caf0de779.png)
+
 
 - Slow Start
 - Congestion Avoidance
